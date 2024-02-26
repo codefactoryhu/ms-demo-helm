@@ -6,9 +6,9 @@ name: Update App Version
 
 jobs:
   update_app_version:
-    name: Updates AppVersion
+    name: Update AppVersion
     permissions:
-      contents: read
+      contents: write
       packages: write
     runs-on: ubuntu-latest
     steps:
