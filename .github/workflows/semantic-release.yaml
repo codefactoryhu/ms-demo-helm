@@ -25,21 +25,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_TOKEN }}
         run: npx semantic-release
-      - name: Extract new version
-        id: extract_version
-        run: |
-          new_version=$(sed -n "s/^\(version = \)\(.*\)\$/\2/p" build.gradle)
-          eval new_version=$new_version
-          echo "New version is $new_version"
-          echo "new_version=$new_version" >> "$GITHUB_OUTPUT"
-      - name: Dispatch Build
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.SEMANTIC_TOKEN }}
-          event-type: release
-          client-payload: |-
-            {
-              "commit_message": "${{ github.event.head_commit.message }}",
-              "commit_branch": "${{ github.ref_name }}",
-              "new_version": "${{ steps.extract_version.outputs.new_version }}"
-            }
