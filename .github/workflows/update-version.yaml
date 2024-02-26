@@ -25,6 +25,9 @@ jobs:
         uses: dcarbone/install-yq-action@v1.1.1
       - name: Push changes
         run: |
+          git config user.name "GitHub"
+          git config user.email "github@release"
+
           prev=$(yq e '.appVersion' Chart.yaml)
 
           if [ "${prev}" = "${{ github.event.client_payload.upstream-version }}" ]; then
