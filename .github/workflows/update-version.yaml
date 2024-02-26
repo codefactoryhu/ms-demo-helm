@@ -1,0 +1,58 @@
+on:
+  repository_dispatch:
+    types: [service_release]
+
+name: Update App Version
+
+jobs:
+  update_app_version:
+    name: Updates AppVersion
+    permissions:
+      contents: read
+      packages: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.client_payload.upstream-branch }}
+      - name: Dispatch Information
+        run: |
+          echo "upstream branch: ${{ github.event.client_payload.upstream-branch }}"
+          echo "new version: ${{ github.event.client_payload.upstream-version }}"
+          echo "upstream commit message: ${{ github.event.client_payload.upstream-commit-message }}"
+      - name: Install YQ
+        uses: dcarbone/install-yq-action@v1.1.1
+      - name: Push changes
+        run: |
+          prev=$(yq e '.appVersion' .Chart.yaml)
+
+          if [ "${prev}" = "${{ github.event.client_payload.upstream-version }}" ]; then
+            exit 0;
+          fi
+
+          p1=$(echo ${prev} | awk -F \. {'print $1'})
+          c1=$(echo ${{ github.event.client_payload.upstream-version }} | awk -F \. {'print $1'})
+          p2=$(echo ${prev} | awk -F \. {'print $2'})
+          c2=$(echo ${{ github.event.client_payload.upstream-version }} | awk -F \. {'print $2'})
+
+          UPSTREAM_CHANGE_TYPE="fix:"
+
+          COMMIT_MSG_REFACT=$(sed 's/\[skip ci\]//g' <<< "${{ github.event.client_payload.upstream-commit-message }}")
+          COMMIT_MSG_REFACT=$(sed 's/chore(release)/ReleaseOf ms-demo-spring-boot/g' <<< "${COMMIT_MSG_REFACT}")
+
+          if [ "${p1}" != "${c1}" ]; then
+            UPSTREAM_CHANGE_TYPE="fix:";
+            BREAKING_CHANGE="BREAKING CHANGE: ms-demo-spring-boot - ${{ github.event.client_payload.upstream-version }} changed";
+          elif [ "${p2}" != "${c2}" ]; then
+            UPSTREAM_CHANGE_TYPE="feat:";
+          fi
+
+          export US_TAG=${{ github.event.client_payload.upstream-version }}
+          yq e '.appVersion = env(US_TAG)' -i .Chart.yaml
+
+          git add .
+
+          git commit -m "${UPSTREAM_CHANGE_TYPE} ${COMMIT_MSG_REFACT}" -m "${BREAKING_CHANGE}"
+          git push
+      
