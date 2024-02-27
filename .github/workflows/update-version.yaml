@@ -21,8 +21,6 @@ jobs:
           echo "upstream branch: ${{ github.event.client_payload.upstream-branch }}"
           echo "new version: ${{ github.event.client_payload.upstream-version }}"
           echo "upstream commit message: ${{ github.event.client_payload.upstream-commit-message }}"
-      - name: Install YQ
-        uses: dcarbone/install-yq-action@v1.1.1
       - name: Push changes
         run: |
           git config user.name "GitHub"
@@ -52,7 +50,7 @@ jobs:
           fi
 
           export US_TAG=${{ github.event.client_payload.upstream-version }}
-          yq e '.appVersion = env(US_TAG)' -i Chart.yaml
+          yq '.appVersion = env(US_TAG)' -i Chart.yaml
 
           git add .
 
