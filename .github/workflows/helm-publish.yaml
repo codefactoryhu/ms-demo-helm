@@ -1,0 +1,39 @@
+name: Helm Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+            version: '3'
+      - name: Helm Lint
+        run: |
+            helm lint .
+      - name: Extract version
+        id: extract_version
+        run: |
+            CHART_VERSION=$(yq '.version' Chart.yaml)
+            echo "CHART_VERSION=$CHART_VERSION" >> $GITHUB_OUTPUT
+      - name: Package Helm chart
+        run: |
+            helm package /path/to/chart
+            mv *.tgz /path/to/artifacts
+      - name: Helm Push
+        uses: appany/helm-oci-chart-releaser@v0.4.1
+        with:
+          name: ms-demo
+          repository: codefactoryhu
+          tag: ${{ steps.extract_version.outputs.CHART_VERSION }}
+          registry: ghcr.io
+          registry_username: github-action
+          registry_password: ${{ secrets.GITHUB_TOKEN }}
+          update_dependencies: 'true' # Defaults to false
