@@ -25,6 +25,7 @@ jobs:
           name: ms-demo
           repository: codefactoryhu
           tag: ${{ steps.extract_version.outputs.CHART_VERSION }}
+          path: '.'
           registry: ghcr.io
           registry_username: github-action
           registry_password: ${{ secrets.GITHUB_TOKEN }}
