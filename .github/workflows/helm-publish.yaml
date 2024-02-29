@@ -19,10 +19,6 @@ jobs:
         run: |
             CHART_VERSION=$(yq '.version' Chart.yaml)
             echo "CHART_VERSION=$CHART_VERSION" >> $GITHUB_OUTPUT
-      - name: Package Helm chart
-        run: |
-            helm package /path/to/chart
-            mv *.tgz /path/to/artifacts
       - name: Helm Push
         uses: appany/helm-oci-chart-releaser@v0.4.1
         with:
