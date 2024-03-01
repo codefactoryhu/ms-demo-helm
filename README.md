@@ -1,4 +1,4 @@
-# Project Name
+# ms-demo
 
 ## Description
 A Helm project that packages ms-demo-spring-boot application with its dependencies.
@@ -20,6 +20,7 @@ A Helm project that packages ms-demo-spring-boot application with its dependenci
     helm install ms-demo oci://ghcr.io/codefactoryhu/ms-demo --version={version}
     ```
 
+### Install from source
 3. Clone the repository:
     ```shell
     git clone https://github.com/codefactoryhu/ms-demo-helm.git
