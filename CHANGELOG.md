@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.1.0...v1.2.0) (2024-03-05)
+
+
+### Bug Fixes
+
+* changed git push token to Semantic Release token ([9037b8d](https://github.com/codefactoryhu/ms-demo-helm/commit/9037b8d1afef5a70832a288732cd05afb3e594ad))
+* Merge branch 'main' of github.com:codefactoryhu/ms-demo-spring-boot ([839d697](https://github.com/codefactoryhu/ms-demo-helm/commit/839d69754d7696131f40c6b77c2ae857304be091))
+
+
+### Features
+
+* fix: add README fix ([17506ee](https://github.com/codefactoryhu/ms-demo-helm/commit/17506ee46b9ff1d2ab1f794c1ffb65cbae8eee92))
+
 # [1.1.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.0.5...v1.1.0) (2024-03-01)
 
 
