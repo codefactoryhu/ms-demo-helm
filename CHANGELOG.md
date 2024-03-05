@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.2.1...v1.3.0) (2024-03-05)
+
+
+### Features
+
+* feat: add feat ([cecbb39](https://github.com/codefactoryhu/ms-demo-helm/commit/cecbb396c6e0a2b82b18dc1dfb2243db901bf9df))
+
 ## [1.2.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.2.0...v1.2.1) (2024-03-05)
 
 
