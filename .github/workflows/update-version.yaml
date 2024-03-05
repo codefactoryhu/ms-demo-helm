@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.client_payload.upstream-branch }}
+          token: ${{ secrets.SEMANTIC_TOKEN }}
       - name: Dispatch Information
         run: |
           echo "upstream branch: ${{ github.event.client_payload.upstream-branch }}"
