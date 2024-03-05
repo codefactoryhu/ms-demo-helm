@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.2.0...v1.2.1) (2024-03-05)
+
+
+### Bug Fixes
+
+* fix: add patch ([c0435d6](https://github.com/codefactoryhu/ms-demo-helm/commit/c0435d67bf5d699e9d3b30008295a77ee8bafa1c))
+
 # [1.2.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.1.0...v1.2.0) (2024-03-05)
 
 
