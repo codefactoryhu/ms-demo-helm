@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.3.0...v1.4.0) (2024-03-07)
+
+
+### Features
+
+* add alb ([0f8cebb](https://github.com/codefactoryhu/ms-demo-helm/commit/0f8cebbb5cf1adc3f807eb5e967d8bb12823c2f7))
+
 # [1.3.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.2.1...v1.3.0) (2024-03-05)
 
 
