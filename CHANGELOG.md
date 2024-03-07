@@ -1,3 +1,11 @@
+## [1.5.2](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.1...v1.5.2) (2024-03-07)
+
+
+### Bug Fixes
+
+* fix readinessProbe/livenessProbe ([a9710b7](https://github.com/codefactoryhu/ms-demo-helm/commit/a9710b7e74d4f3c28a6f9f2345050c13ee723e09))
+* fix readinessProbe/livenessProbe ([a69ed5f](https://github.com/codefactoryhu/ms-demo-helm/commit/a69ed5f88519251cb7ae68a9ef66889223db3d73))
+
 ## [1.5.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.0...v1.5.1) (2024-03-07)
 
 
