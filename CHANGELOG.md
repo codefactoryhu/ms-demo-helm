@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.2...v1.5.3) (2024-03-07)
+
+
+### Bug Fixes
+
+* add healthcheck-port 9000 ([b15fe85](https://github.com/codefactoryhu/ms-demo-helm/commit/b15fe855fafebf61b0f793592ee38db74857544b))
+
 ## [1.5.2](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.1...v1.5.2) (2024-03-07)
 
 
