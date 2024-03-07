@@ -103,6 +103,7 @@ readinessProbe:
     periodSeconds: 10
     failureThreshold: 3
 
+
 # Additional volumes on the output Deployment definition.
 volumes: []
 # - name: foo
