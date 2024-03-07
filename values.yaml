@@ -92,14 +92,16 @@ livenessProbe:
   httpGet:
     path: /actuator/health
     port: 9000
-  initialDelaySeconds: 15
-  periodSeconds: 3
+    initialDelaySeconds: 60
+    periodSeconds: 10
+    failureThreshold: 3
 readinessProbe:
   httpGet:
     path: /actuator/health
     port: 9000
-  initialDelaySeconds: 15
-  periodSeconds: 3
+    initialDelaySeconds: 60
+    periodSeconds: 10
+    failureThreshold: 3
 
 # Additional volumes on the output Deployment definition.
 volumes: []
