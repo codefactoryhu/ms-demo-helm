@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.4.0...v1.5.0) (2024-03-07)
+
+
+### Features
+
+* feat: fix db host ([5c6d795](https://github.com/codefactoryhu/ms-demo-helm/commit/5c6d795117d1087c1942f649854eea2d49315cef))
+
 # [1.4.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.3.0...v1.4.0) (2024-03-07)
 
 
