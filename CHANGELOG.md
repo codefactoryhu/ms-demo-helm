@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.3...v1.5.4) (2024-03-08)
+
+
+### Bug Fixes
+
+* fix: modified datasource ([3a23ef7](https://github.com/codefactoryhu/ms-demo-helm/commit/3a23ef7531cd3e74126e84bd8f4f5a9c94965c52))
+
 ## [1.5.3](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.2...v1.5.3) (2024-03-07)
 
 
