@@ -8,4 +8,4 @@ dependencies:
     alias: database
 type: application
 version: 1.7.0
-appVersion: "0.7.0"
+appVersion: "0.7.1"
