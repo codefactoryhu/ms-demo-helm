@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.7.1...v1.8.0) (2024-03-08)
+
+
+### Features
+
+* add resources ([df11e14](https://github.com/codefactoryhu/ms-demo-helm/commit/df11e1464968b534fd7a3800a5a5ad3125816bb6))
+
 ## [1.7.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.7.0...v1.7.1) (2024-03-08)
 
 
