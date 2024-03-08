@@ -10,6 +10,16 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
+env:
+  - name: DB_HOST
+    value: "ms-demo-database"
+  - name: DB_DATABASE
+    value: "ms_demo_db"
+  - name: DB_USER
+    value: "springuser"
+  - name: DB_PASSWORD
+    value: "springboot"
+
 imagePullSecrets: 
   - name: github-imagepullsecret
 nameOverride: ""
