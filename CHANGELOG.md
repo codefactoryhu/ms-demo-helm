@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.4...v1.6.0) (2024-03-08)
+
+
+### Features
+
+* Merge branch 'main' of github.com:codefactoryhu/ms-demo-spring-boot ([71b9615](https://github.com/codefactoryhu/ms-demo-helm/commit/71b9615e863f3b480382b5550c5a8dda0207309a))
+
 ## [1.5.4](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.3...v1.5.4) (2024-03-08)
 
 
