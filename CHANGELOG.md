@@ -1,3 +1,24 @@
+# [1.6.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.4...v1.6.0) (2024-03-08)
+
+
+### Features
+
+* Merge branch 'main' of github.com:codefactoryhu/ms-demo-spring-boot ([71b9615](https://github.com/codefactoryhu/ms-demo-helm/commit/71b9615e863f3b480382b5550c5a8dda0207309a))
+
+## [1.5.4](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.3...v1.5.4) (2024-03-08)
+
+
+### Bug Fixes
+
+* fix: modified datasource ([3a23ef7](https://github.com/codefactoryhu/ms-demo-helm/commit/3a23ef7531cd3e74126e84bd8f4f5a9c94965c52))
+
+## [1.5.3](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.2...v1.5.3) (2024-03-07)
+
+
+### Bug Fixes
+
+* add healthcheck-port 9000 ([b15fe85](https://github.com/codefactoryhu/ms-demo-helm/commit/b15fe855fafebf61b0f793592ee38db74857544b))
+
 ## [1.5.2](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.1...v1.5.2) (2024-03-07)
 
 
