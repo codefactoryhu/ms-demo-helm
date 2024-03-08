@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.7.0...v1.7.1) (2024-03-08)
+
+
+### Bug Fixes
+
+* fix: deleted fixed env ([db30c2d](https://github.com/codefactoryhu/ms-demo-helm/commit/db30c2dfe70f0cf57b55ab402d86e16e0dd35f2b))
+
 # [1.7.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.6.1...v1.7.0) (2024-03-08)
 
 
