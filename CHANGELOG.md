@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.6.1...v1.7.0) (2024-03-08)
+
+
+### Features
+
+* add env ([fd32d4a](https://github.com/codefactoryhu/ms-demo-helm/commit/fd32d4a21234949b884e2f6966a790f255616052))
+
 ## [1.6.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.6.0...v1.6.1) (2024-03-08)
 
 
