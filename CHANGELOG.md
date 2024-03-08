@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.6.0...v1.6.1) (2024-03-08)
+
+
+### Bug Fixes
+
+* add valid subnet ([1402868](https://github.com/codefactoryhu/ms-demo-helm/commit/140286886cb62b2d8d4247414057b51272cd8ca0))
+
 # [1.6.0](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.5.4...v1.6.0) (2024-03-08)
 
 
