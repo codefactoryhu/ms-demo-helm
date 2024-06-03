@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.8.1...v1.8.2) (2024-06-03)
+
+
+### Bug Fixes
+
+* fix: test demo ([3933766](https://github.com/codefactoryhu/ms-demo-helm/commit/39337663dbd4c7c89a5c9f3a41ba2cee18cb9a0e))
+
 ## [1.8.1](https://github.com/codefactoryhu/ms-demo-helm/compare/v1.8.0...v1.8.1) (2024-06-02)
 
 
